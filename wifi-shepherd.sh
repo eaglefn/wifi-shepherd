@@ -20,8 +20,8 @@ EmailReceiver="frank@fnol.de"
 
 
 # Don't change unless you know what you are doing.
-Wifi_Shepherd_DIR="/home/pi/"
-Nmaptocsv_DIR="/home/pi/nmaptocsv"
+Wifi_Shepherd_DIR="/home/pi/wifi-sheperd"
+Nmaptocsv_DIR="$Wifi-Shepherd_DIR"/nmaptocsv"
 Webserver_DIR="/var/www/html"
 
 Nmapoutput_FILE="nmap.raw"
