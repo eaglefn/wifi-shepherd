@@ -12,12 +12,11 @@
 #------------------------------------------------------------------------------------------------------
 # Make your settings here!
 Wifi_Shepherd_Hostname="raspberrypi.lan"
-Wifi_Network="192.168.171.0/24"
+Wifi_Network="192.168.1.0/24"
 
 #MessageText="Alert! Wifi Shepherd found the following new devices in your network!"
 MessageText="Achtung! Wifi Shepherd hat folgende neuen Geräte in Ihrem Netzwerk gefunden!"
-EmailReceiver="frank@fnol.de"
-
+EmailReceiver="yourname@email.com"
 
 # Don't change unless you know what you are doing.
 Wifi_Shepherd_DIR="/home/pi/wifi-sheperd"
