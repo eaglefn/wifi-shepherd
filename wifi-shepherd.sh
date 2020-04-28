@@ -7,8 +7,8 @@
 # For more information see https://pentestit.de
 #
 # To run this scpript permanently create a conjob using "crontab -e"
-# Runs Wifi Shepherd every 10 minutes -  */10 * * * * sudo /home/pi/wifi-shepherd.sh
-# Runs Wifi Shepherd every day at 8:00  and at 17:00 -  0 8,17 * * * sudo /home/pi/wifi-shepherd.sh
+# Runs Wifi Shepherd every 10 minutes -  */10 * * * * /home/pi/wifi-shepherd/wifi-shepherd.sh
+# Runs Wifi Shepherd every day at 8:00  and at 17:00 -  0 8,17 * * * /home/pi/wifi-shepherd/wifi-shepherd.sh
 #------------------------------------------------------------------------------------------------------
 # Make your settings here!
 Wifi_Shepherd_Hostname="raspberrypi.lan"
@@ -87,6 +87,6 @@ cat  "$MacDiff_FILE" >> "$MacKnown_FILE"
 
 #Send email with alert if message.txt not empty
 
-#if [ -s message.txt ];
-#       then mail -s "$MessageText" "$EmailReceiver" < message.txt;
-#fi
+if [ -s message.txt ];
+       then mail -s "$MessageText" "$EmailReceiver" < message.txt;
+fi
