@@ -6,7 +6,7 @@ CSV_FN=$1
 echo "<body>"
 
 echo "<table  style=\"width:100%\">"
-echo "<tr> <td><p align=\"left\"><font family=\"Verdana,Arial,Helvetica\" color=\"#0000FF\" size=\"+1\">"
+echo "<tr> <td><p align=\"left\"><font family=\"Verdana,Arial,Helvetica\" color=\"#0000FF\" size=\"+2\">"
 
 echo "Last Scan: `date +%Y-%m-%d" "%H:%M`"
 echo "</font></p> </td> <td><img src=\"..\images\wifi_shepherd.png\" alt=\"Wifi Shepherd\" width=\"225\" height=\"108\" align=\"right\"></td></tr></table>"
