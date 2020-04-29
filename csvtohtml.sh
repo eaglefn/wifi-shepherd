@@ -9,7 +9,7 @@ echo "<table  style=\"width:100%\">"
 echo "<tr> <td><p align=\"left\"><font family=\"Verdana,Arial,Helvetica\" color=\"#0000FF\" size=\"+2\">"
 
 echo "Last Scan: `date +%Y-%m-%d" "%H:%M`"
-echo "</font></p> </td> <td><img src=\"..\images\wifi_shepherd.png\" alt=\"Wifi Shepherd\" width=\"225\" height=\"108\" align=\"right\"></td></tr></table>"
+echo "</font></p> </td> <td><img src=\"..\images\wifi_shepherd.gif\" alt=\"Wifi Shepherd\" width=\"225\" height=\"108\" align=\"right\"></td></tr></table>"
 
 echo "<table id=\"shepherd\" class=\"display\" style=\"width:100%\">"
 echo "<thead>"
@@ -22,4 +22,3 @@ tail -n +2 $CSV_FN | \
 echo "</tbody>"
 echo "</table>"
 echo "</body>"
-
