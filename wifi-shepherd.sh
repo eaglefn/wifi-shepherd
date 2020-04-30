@@ -90,3 +90,7 @@ cat  "$MacDiff_FILE" >> "$MacKnown_FILE"
 if [ -s message.txt ];
        then mail -s "$MessageText" "$EmailReceiver" < message.txt;
 fi
+
+#Cleanup
+rm "$Nmapoutput_FILE" "$Nmapcsv_FILE" "$MacDetected_FILE" "$MacDiff_FILE" nmap.tmp 
+
