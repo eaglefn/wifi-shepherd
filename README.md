@@ -120,11 +120,11 @@ You should have received a copy of the GNU General Public License along with nma
 
 ## Credits
 
-I'm using Thomas D. brilliant  script [nmaptocsv] (https://github.com/maaaaz/nmaptocsv) to convert nmap output to a csv file. Thanks! @maaaaz
+I'm using Thomas D. brilliant  script nmaptocsv https://github.com/maaaaz/nmaptocsv to convert nmap output to a csv file. Thanks! @maaaaz
 
-[DataTables] (https://www.datatables.net) are used to enhance the accessibility of data in HTML tables.
+DataTables https://www.datatables.net are used to enhance the accessibility of data in HTML tables.
 
 
-##Links
+## Links
 
-You will find more information (German language only) on [pentestit.de] (https://pentestit.de/wifi-shepherd-teil-1-installieren-und-einrichten/)
+You will find more information (German language only) on pentestit.de https://pentestit.de/wifi-shepherd-teil-1-installieren-und-einrichten/
