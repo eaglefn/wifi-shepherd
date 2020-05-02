@@ -1,5 +1,8 @@
 # Wifi-Shepherd
 
+![alt text](https://github.com/eaglefn/wifi-shepherd/blob/master/images/wifi-shepherd.jpg?raw=true)
+
+
 ## Description
 
 The Wifi-Shepherd is a small tool based on Raspberry Pi Zero W which scans your local wifi network on a regular basis and notifies you by email, if it discovered a new device. The scan result is published on its own website. With its optional USB addon board you can simply use it on every device that provides power via its USB interface.  You can install Wifi-Shepherd in three steps:
