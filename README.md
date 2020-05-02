@@ -1,5 +1,7 @@
 # Wifi-Shepherd
 
+##Description
+
 The Wifi-Shepherd is a small tool based on Raspberry Pi Zero W which scans your local wifi network on a regular basis and notifies you by email, if it discovered a new device. The scan result is published on its own website. With its optional USB addon board you can simply use it on every device that provides power via its USB interface.  You can install Wifi-Shepherd in three steps:
 
 ## STEP 1:  Download Raspbian Light and write it to SD Card
@@ -106,3 +108,23 @@ crontab -e
 e.g. this will scan your network every 10 minutes:
 
 */10 * * * * /home/pi/wifi-shepherd/wifi-shepherd.sh
+
+## Copyright and license
+Wifi-Shepherd is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Wifi-Shepherd  is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with nmaptocsv. If not, see http://www.gnu.org/licenses/.
+
+## Credits
+
+I'm using Thomas D. brilliant  script [nmaptocsv] (https://github.com/maaaaz/nmaptocsv) to convert nmap output to a csv file. Thanks! @maaaaz
+
+[DataTables] ( https://www.datatables.net) are used to enhance the accessibility of data in HTML tables.
+
+
+##Links
+
+You will find more information (German language only) on [pentestit.de] (https://pentestit.de/wifi-shepherd-teil-1-installieren-und-einrichten/)
