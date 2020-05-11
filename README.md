@@ -133,3 +133,13 @@ DataTables https://www.datatables.net are used to enhance the accessibility of d
 ## Links
 
 You will find more information (German language only) on pentestit.de https://pentestit.de/wifi-shepherd-teil-1-installieren-und-einrichten/
+
+https://pentestit.de/wifi-shepherd-teil-2-anpassen-und-erweitern/
+
+https://www.youtube.com/watch?v=gdm6kQtu55A
+
+
+## Releases
+
+Download the Wifi-Shepherd image (540 MB), unzip it and copy it to your SD card. Enjoy the easy setup.
+https://github.com/eaglefn/wifi-shepherd/releases
