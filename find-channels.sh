@@ -1,5 +1,5 @@
 #!/bin/sh
-# Title: Find channels in your Wifi-Network
+# Title: Find-Channels in your Wifi-Network
 # Author: Pentestit.de, Frank Neugebauer
 # Version: 0.1 - 2020/05/18
 #
@@ -17,13 +17,15 @@
 #------------------------------------------------------------------------------------------------------
 # Make your settings here!
 Wifi_Iface="wlan1"
-Wifi_MonIface="wlan1mon"  # check with ifconfig that you are using the correct monitor interface
-Wifi_Essid="FreeWifi"       # this is the SSID, not the Mac-Address of your Access Point
-Time_to_wait="30"         # time to run airodump-ng to collect channels (in seconds)
+Wifi_MonIface="wlan1" 	 # check with ifconfig that you are using the correct monitor interface
+Wifi_Essid="FreeWiFi"      # this is the SSID, not the Mac-Address of your Access Point
+Time_to_wait="30"        # time to run airodump-ng to collect channels (in seconds)
 #-------------------------------------------------------------------------------------------------------
 #set your WLAN-Adapter in monitor mode
-sudo airmon-ng stop "$Wifi_MonIface" >/dev/null 2>&1
-sudo airmon-ng start "$Wifi_Iface" >/dev/null 2>&1
+
+sudo ip link set "$Wifi_Iface" down
+sudo iw dev "$Wifi_Iface" set type monitor
+sudo ip link set "$Wifi_Iface" up
 
 #It is  not so easy to run airodump-ng in a background session while collecting data.
 #For that reason I'm usig "screen" to run it and kill all sessions after a time period.
@@ -40,10 +42,9 @@ grep "$Wifi_Essid"  scan-01.csv | cut -d "," -f 4 | tr -d ' '| sort | uniq | sed
 
 #create comma separated list with channels
 echo $(paste -sd, channels.tmp) > channels.txt
-#cat channels.tmp
-#cat channels.txt
+cat channels.tmp
+cat channels.txt
 
 # cleanup
 sudo rm scan-01.csv channels.tmp
-sudo airmon-ng stop "$Wifi_MonIface" >/dev/null 2>&1
-
+sudo ip link set "$Wifi_Iface" down
